@@ -12,60 +12,79 @@
 
 <body>
     <div class="container-fluid">
+        <!-- Page principale -->
         <div class="row">
+            <!-- Barre latérale -->
             <div class="col-2 darkgrey page">
                 <div class="container-fluid">
+                    <!-- Photo de profile -->
                     <div class="row">
                         <div class="col-12 photo">
                             <img src="images/photo.JPG">
                         </div>
                     </div>
-                    <div class="row justify-content-center">
-                        <div id="1" class="col-5 lightgrey onglet" onclick="new_page(this.id)">
-                            Onglet 1
-                        </div>
+                    <!-- Espace onglets -->
+                    <div class="row">
+                        <a id="1" class="col-12 lightgrey onglet" href="#" onclick="new_page(this.id)">
+                            Compétences
+                        </a>
                     </div>
-                    <div class="row justify-content-center">
-                        <div id="2" class="col-5 lightgrey onglet" onclick="new_page(this.id)">
-                            Onglet 2
-                        </div>
+                    <div class="row">
+                        <a id="2" class="col-12 lightgrey onglet" href="#" onclick="new_page(this.id)">
+                            Soft Skills
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a id="3" class="col-12 lightgrey onglet" href="#" onclick="new_page(this.id)">
+                            Parcours aca.
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a id="4" class="col-12 lightgrey onglet" href="#" onclick="new_page(this.id)">
+                            Parcours pro.
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a id="5" class="col-12 lightgrey onglet" href="#" onclick="new_page(this.id)">
+                            Projets
+                        </a>
                     </div>
                 </div>
             </div>
+            <!-- Contenu -->
             <div class="col-10 lightgrey page">
+                <!-- Bloc principal -->
                 <div id="1+" class="container bloc1">
-                    <div class="row justify-content-center">
-                        <div id="11" class="col-5 darkgrey under-block" onclick="display(this.id)">Onglet 1
+                    <div class="row">
+                        <!-- Premier sous-bloc -->
+                        <div class="col-6">
+                            <div class="container">
+                                <div class="row">
+                                    <div id="11" class="col-12 darkgrey under-block" onclick="display(this.id)">Onglet 1</div>
+                                </div>
+                                <div class="row">
+                                    <div id="13" class="col-12 darkgrey under-block" onclick="display(this.id)">Onglet 3</div>
+                                </div>
+                                <div class="row">
+                                    <div id="15" class="col-12 darkgrey under-block" onclick="display(this.id)">Onglet 5</div>
+                                </div>
+                            </div>
                         </div>
-                        <div id="12" class="col-5 darkgrey under-block" onclick="display(this.id)">Onglet 2
+                        <!-- Premier sous-bloc -->
+                        <div class="col-6">
+                            <div class="container">
+                                <div class="row">
+                                    <div id="12" class="col-12 darkgrey under-block" onclick="display(this.id)">Onglet 2</div>
+                                </div>
+                                <div class="row">
+                                    <div id="14" class="col-12 darkgrey under-block" onclick="display(this.id)">Onglet 4</div>
+                                </div>
+                                <div class="row">
+                                    <div id="16" class="col-12 darkgrey under-block" onclick="display(this.id)">Onglet 6</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div id="13" class="col-5 darkgrey under-block" onclick="display(this.id)">Onglet 3
-                        </div>
-                        <div id="14" class="col-5 darkgrey under-block" onclick="display(this.id)">Onglet 4
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div id="15" class="col-5 darkgrey under-block" onclick="display(this.id)">Onglet 5
-                        </div>
-                        <div id="16" class="col-5 darkgrey under-block" onclick="display(this.id)">Onglet 6
-                        </div>
-                    </div>
-                </div>
-                <div id="2+" class="container bloc2">
-                    <div class="row justify-content-center">
-                        <div id="21" class="col-5 darkgrey under-block" onclick="display(this.id)">Onglet 7
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div id="22" class="col-5 darkgrey under-block" onclick="display(this.id)">Onglet 8
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div id="23" class="col-5 darkgrey under-block" onclick="display(this.id)">Onglet 9
-                        </div>
-                    </div>
+                    </div>   
                 </div>
             </div>
         </div>

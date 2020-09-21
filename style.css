@@ -7,30 +7,45 @@
 }
 
 .page {
-    height: 150vh;
+    height: 100vh;
 }
 
 .photo {
     text-align: center;
-    height: 30vh;
 }
 
 img {
     max-width: 100%;
-    height: 100%;
-    clip-path: circle(42% at 50% 50%);
+    border-radius: 100%;
+    transition: transform .2s;
+    cursor: pointer;
+    margin: 1vh 0 3vh 0;
+    border: 2px solid;
+    border-color: rgb(221, 74, 74);
+}
+
+img:hover {
+    transform: scale(1.02);
 }
 
 .under-block {
     margin: 1em 1em 1em 1em;
     height: 20vh;
     cursor: pointer;
+    border-bottom: 5px solid;
+    border-color:  rgb(221, 74, 74);
 }
+
+.under-block:hover {
+    box-shadow: 0 0 15px black;
+}
+
 
 .bloc1 {
     background-color : rgb(230, 222, 222);
     visibility: hidden;
     position: absolute;
+    margin: 10vh 5vh 0 10vh
 }
 
 .bloc2 {
@@ -40,13 +55,26 @@ img {
 }
 
 .onglet {
-height: 10vh;
-    margin: 1em 0 1em 0;
     cursor: pointer;
-    transition: transform .2s;
+    transition: all 1s ease-out;;
+    border: 1px solid;
+    border-color: rgb(207, 199, 199);
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: bold;
+    color: #333;
+    font-size: 1.5em;
 }
 
 .onglet:hover {
-    transform: scale(1.2);
+    color: #333;
+    background-color: rgb(221, 74, 74);
+    opacity: 0.5;
+    text-decoration: none;
 }
 
+.onglet:focus {
+    color: #333;
+    border-right: 3px solid;
+    border-right-color: rgb(221, 74, 74);
+}
