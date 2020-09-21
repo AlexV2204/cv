@@ -1,0 +1,52 @@
+.darkgrey {
+    background-color: rgb(207, 199, 199);
+} 
+
+.lightgrey {
+    background-color: rgb(230, 222, 222);
+}
+
+.page {
+    height: 150vh;
+}
+
+.photo {
+    text-align: center;
+    height: 30vh;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+    clip-path: circle(42% at 50% 50%);
+}
+
+.under-block {
+    margin: 1em 1em 1em 1em;
+    height: 20vh;
+    cursor: pointer;
+}
+
+.bloc1 {
+    background-color : rgb(230, 222, 222);
+    visibility: hidden;
+    position: absolute;
+}
+
+.bloc2 {
+    background-color : rgb(230, 222, 222);
+    visibility: hidden;
+    position: absolute;
+}
+
+.onglet {
+height: 10vh;
+    margin: 1em 0 1em 0;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.onglet:hover {
+    transform: scale(1.2);
+}
+
